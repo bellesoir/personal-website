@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 16px Georgia, times, serif;
+    margin-top: 60px;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    padding: 20px 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+nav ul {
+    overflow: auto;
+    margin: 0;
+}
+
+nav li {
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 10px;
+    float: right;
+
+}
+
+.heading {
+    background-image: url("../images/oc-beach.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    padding: 50px;
+}
+
+h1 {
+    font-family: "Book Antiqua", times;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #01146d;
+    font-weight: bolder;
+}
+/*Adjusts H1 for larger viewports*/
+@media all and (min-width: 992px) {
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    h1 {
+        font-size: 56px;
+        font-weight: 800;
+    }
+}
+
+div.copy {
+    color:#8ea0a0;
+    padding: 10px 15px 0;
+    position: relative;
+}
+
+h3 {
+    color: white;
+    background-color: blue;
+    border: 2px solid darkBlue;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+h3:hover {
+    color: blue;
+    background-color: white;
+    border-color: darkGray;
+}
+
+.copy li {
+    display: inline-block;
+    padding-right: 10px;
+    list-style: square;
+}
+
+#img-me {
+    float: left;
+    width: 100px;
+    margin-right: 5px;
+}
+
+footer {
+    font-family: Helvetica, arial;
+    font-size: 10px;
+    float: right;
+    text-transform: uppercase;
+}

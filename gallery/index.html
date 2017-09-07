@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../about-me/index.html">About Me</a></li>
+                    <li><a href='index.html'>Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="container">
+            <div class="row">
+                <div onclick="reveal('ice')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/alaska.jpg">
+                    <div class="caption" id='ice'>
+                        <p>Alaska</p>
+                    </div>
+                </div>
+                <div onclick="reveal('sky')" class=" col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/indoor-skydiving.jpg">
+                    <div class="caption" id='sky'>
+                        <p>Indoor Skydiving</p>
+                    </div>
+                </div>
+                <div onclick="reveal('lights')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/longwood-gardens.jpg">
+                    <div class="caption" id='lights'>
+                        <p>Longwood Gardens: Christmas</p>
+                    </div>
+                </div>
+                <div onclick="reveal('mask')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/mask.jpg">
+                    <div class="caption" id='mask'>
+                        <p>Wheaton Village: Festival Mask</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div onclick="reveal('hall')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/independance-hall.jpg">
+                    <div class="caption" id='hall'>
+                        <p>Independance Hall</p>
+                    </div>
+                </div>
+                <div onclick="reveal('turtle')" class=" col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/turtle.jpg">
+                    <div class="caption" id='turtle'>
+                        <p>Loggerhead Sea Turtle</p>
+                    </div>
+                </div>
+                <div onclick="reveal('maya')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/maya.jpg">
+                    <div class="caption" id='maya'>
+                        <p>Xunantunich: Maya Site</p>
+                    </div>
+                </div>
+                <div onclick="reveal('dc')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/dc.jpg">
+                    <div class="caption" id='dc'>
+                        <p>National Archieves: Independence Day</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div onclick="reveal('jack')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/jack.jpg">
+                    <div class="caption" id='jack'>
+                        <p>Jack-O-Lantern</p>
+                    </div>
+                </div>
+                <div onclick="reveal('rail')" class=" col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/memphis-rails.jpg">
+                    <div class="caption" id='rail'>
+                        <p>Memphis-Arkansas Bridge</p>
+                    </div>
+                </div>
+                <div onclick="reveal('trolly')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/trolly.jpg">
+                    <div class="caption" id='trolly'>
+                        <p>Memphis, TN</p>
+                    </div>
+                </div>
+                <div onclick="reveal('winter')" class="col col-lg-3 col-m-4 col-s-6">
+                    <img src="images/winter.jpg">
+                    <div class="caption" id='winter'>
+                        <p>Snow Day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><time dateime="August 2017">August 2017</time> V.N.B.</p>
+        </footer>
+    </body>
+</html>

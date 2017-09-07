@@ -1,0 +1,100 @@
+
+body {
+    font: normal 16px Georgia, times, serif;
+    margin-top: 60px;
+    background-color: black;
+    height: auto;
+}
+
+header {
+    background-color: black;
+    padding: 20px 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    overflow: auto;
+}
+
+nav li {
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 10px;
+    float: right;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightBlue;
+}
+:
+
+#container {
+    padding: 0 25px;
+}
+
+
+img {
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    display: inline-block;
+    margin: auto;
+    height: 200px;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: lightBlue;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.caption p {
+    width: 75%;
+    text-align: center;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+footer {
+    font-family: Helvetica, arial;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: gray;
+    float: right;
+    clear: both;
+    bottom: 0;
+}
+
+
+@media all and (min-width: 480px) {
+    #container {
+        padding: 0 50px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #container {
+        padding: 0 75px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #container {
+        padding: 0 100px;
+    }
+}
