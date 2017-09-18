@@ -37,20 +37,15 @@ a:hover {
 }
 :
 
-#container {
+#gallery {
     padding: 0 25px;
 }
 
 
 img {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
     display: inline-block;
     margin: auto;
-    height: 200px;
+    width:100%;
 }
 
 .caption {
@@ -82,19 +77,19 @@ footer {
 
 
 @media all and (min-width: 480px) {
-    #container {
+    #gallery {
         padding: 0 50px;
     }
 }
 
 @media all and (min-width: 768px) {
-    #container {
+    #gallery {
         padding: 0 75px;
     }
 }
 
 @media all and (min-width: 1200px) {
-    #container {
+    #gallery {
         padding: 0 100px;
     }
 }
