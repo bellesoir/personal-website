@@ -2,18 +2,19 @@
     box-sizing: border-box;
 }
 
-/*row class not included in order to maitain 'wrap' effect for columns*/
-body, #container {
+body, #gallery {
     overflow: auto;
 }
 
+#gallery {
+    margin-top: 20px;
+}
+
 .col {
-    overflow: auto;
-    padding: 10px;
+    height: auto;
     position: relative;
     display: inline-block;
     float: left;
-    border: 10px solid black;
 }
 /*Default: all columns appear at 100%, for smallest viewports*/
 div {
@@ -101,7 +102,7 @@ div {
     }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1024px) {
 
     .col-lg-1 {
         width: 8.33%;

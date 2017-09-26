@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 /*Toggles image captions*/
 $('img').on('mouseover', function(){
-    var i = $.inArray($(this)[0],$('img'));
+    var i = $.inArray($(this)[0],$('img')) - 2;
     $($('.caption')[i]).toggle();
 });
 

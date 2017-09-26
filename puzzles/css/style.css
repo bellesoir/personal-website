@@ -1,0 +1,46 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+#madlib-input {
+    width: 340px;
+    margin: 0 auto;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    font-family: 'IM Fell English SC', cursive, arial;
+    font-weight: bolder;
+}
+
+button {
+    border-radius: 12px;
+    width: 60px;
+}
+
+#madlib-story {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    text-align: center;
+    display: none;
+}
+
+h3, p {
+    color: white;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+span {
+    color: #248FB5;
+}

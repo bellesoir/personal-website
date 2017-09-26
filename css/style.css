@@ -1,0 +1,137 @@
+/* 2C4249  576671  94C3C8  C7EDF5  FDFDEC */
+/* dk bl: 07375B  bl: 0A4174  248FB5  gray: DBCDC2  cream: FDEDBE */
+/* 51666B  377662  grn: CDF111  FDFCFD  D9143B */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 16px 'Rock Salt', cursive, arial;
+    color:  #0A4174;
+    padding-top: 52px;
+    background-image: url('../images/ship.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 23%;
+    height: 100VH;
+    overflow: hidden;
+}
+
+header {
+    background-color: #248FB5;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#burger, #close-nav {
+    height: 2em;
+    display: inline-block;
+    float: right;
+}
+
+#close-nav {
+    display: none;
+}
+
+nav {
+    width: 8em;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+nav ul {
+    overflow: auto;
+}
+
+nav li {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'IM Fell English SC', times, serif;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav a {
+    color: #07375B;
+    text-decoration: none;
+}
+
+#current {
+    border-bottom: #07375B 2px solid;
+    border-top: #07375B 2px solid;
+}
+
+a:hover {
+    color: lightBlue;
+}
+
+h1, h2 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: .7em;
+}
+
+footer {
+    width: 100%;
+    height: 8px;
+    padding: 2px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: 'Cormorant Unicase', times, serif;
+    font-size: 14px;
+    position: absolute;
+    bottom: 2%;
+}
+
+/*Ipad*/
+@media all and (min-width: 768px) {
+    header {
+        height: 52px;
+    }
+    nav {
+        width: auto;
+        display: inline-block;
+    }
+
+    nav li {
+        font-size: 1em;
+        display: inline-block;
+        padding: 5px 10px;
+        float: left;
+    }
+
+    #burger, #close-nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+
+}
+
+/*Desktop*/
+@media all and (min-width: 1200px){
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+
+}
