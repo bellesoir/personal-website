@@ -22,7 +22,7 @@ body {
 }
 
 img {
-    display: inline-block;
+    display: block;
     width:100%;
     border: 5px solid #248FB5;
 }
@@ -44,16 +44,6 @@ img {
     text-align: center;
     margin: 0 auto;
     overflow: hidden;
-}
-
-footer {
-    font-family: Helvetica, arial;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: gray;
-    float: right;
-    clear: both;
-    bottom: 0;
 }
 
 

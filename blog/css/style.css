@@ -46,10 +46,10 @@ body > div:last-of-type p {
     text-align: center;
 }
 
-a {
+#blog-nav a {
     text-decoration: none;
 }
 
-a:hover {
+#blog-nav a:hover {
     color: #248FB5;
 }
