@@ -9,7 +9,7 @@ body {
 }
 
 .heading {
-    background-image: url("../../images/oc-beach.jpg");
+    background-image: url("../images/oc-beach.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
