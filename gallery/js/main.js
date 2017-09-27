@@ -15,6 +15,7 @@ $('.caption').on('mouseout', function(){
 }); //CLOSES ready()
 
 $(window).on('resize', function(){
-    var h = $('.col').css('width');
-    $('.col').css('height', h)
+    $('.col').css('height', $('.col').css('width'));
 });
+
+$('.col').css('height', $('.col').css('width'));
