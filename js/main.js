@@ -17,7 +17,7 @@ $(window).on('resize', function(){
 });
 
 var checkFooter = function(){
-    if ($('body').outerHeight() < $(window).height()){
+    if ($('body').outerHeight() <= $(window).height()){
         $('footer').css({'position': 'absolute', 'bottom':'2%'});
     } else {
         $('footer').css({'position': 'relative'});

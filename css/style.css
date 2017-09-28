@@ -90,7 +90,8 @@ footer {
     font-family: 'Cormorant Unicase', times, serif;
     font-size: 14px;
     font-weight: normal;
-    position: relative;
+    position: absolute;
+    bottom: 2%;
 }
 
 /*Ipad*/

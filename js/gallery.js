@@ -13,9 +13,10 @@ $('.caption').on('mouseout', function(){
 });
 
 }); //CLOSES ready()
-
+/*
 $(window).on('resize', function(){
     $('.col').css('height', $('.col').css('width'));
 });
 
 $('.col').css('height', $('.col').css('width'));
+*/

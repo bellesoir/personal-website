@@ -74,7 +74,7 @@ div {
         width: 25%;
     }
     .col-m-4 {
-        width: 33.33%;
+        max-width: 33.33%;
     }
     .col-m-5 {
         width: 41.66%;
