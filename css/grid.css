@@ -11,7 +11,6 @@ body, #gallery {
 }
 
 .col {
-    height: auto;
     position: relative;
     display: inline-block;
     float: left;
