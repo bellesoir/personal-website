@@ -2,6 +2,7 @@ body {
     background-image: none;
     background-color: #07375B;
     overflow: auto;
+    height: auto;
 }
 
 #burger, #close-nav {
@@ -47,12 +48,17 @@ img {
     margin: 0 auto;
     overflow: hidden;
     padding-top: 12%;
+    font-size: 1.5em;
 }
 
 
 @media all and (min-width: 480px) {
     #gallery {
         padding: 0 50px;
+    }
+
+    .caption p {
+        font-size: 3em;
     }
 }
 

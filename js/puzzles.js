@@ -1,15 +1,14 @@
-$('#submit').on('click', function(event){
+$('form').on('submit', function(event){
     event.preventDefault();
-    var ready = false;
+    var ready = 0;
     for(var i=0; i < $('input').length; i++) {
         if($($('input')[i]).val() == ""){
-            alert('Empty Input(s): Please fill out all inputs.');
-            break;
-        } else {
-            ready = true;
+            ready = ready + 1;
         }
     }
-    if (ready == true) {
+    if (ready > 0){
+        alert('Empty Input(s): Please fill out all inputs.');
+    } else if (ready === 0) {
         $('#madlib-input').hide();
         $('#madlib-story').show();
         for(var i=0; i < $('input').length; i++) {
