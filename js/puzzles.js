@@ -1,9 +1,14 @@
 $('form').on('submit', function(event){
     event.preventDefault();
+    $('input').removeClass('is-invalid');
     var ready = 0;
     for(var i=0; i < $('input').length; i++) {
-        if($($('input')[i]).val() == ""){
+        if($($('input')[i]).val() === ""){
             ready = ready + 1;
+            $('input').eq(i).addClass('is-invalid');
+        }
+        if (ready === 1) {
+            $('input').eq(i).focus();
         }
     }
     if (ready > 0){

@@ -59,7 +59,7 @@ nav a {
     text-decoration: none;
 }
 
-#current {
+#is-current {
     border-bottom: #07375B 2px solid;
     border-top: #07375B 2px solid;
 }
@@ -79,6 +79,12 @@ h1 {
 
 h2 {
     font-size: .7em;
+}
+
+#widget-weather {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
 }
 
 footer {

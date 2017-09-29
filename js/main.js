@@ -10,6 +10,10 @@ $('#close-nav').on('click', function(){
     $('nav').slideUp(500);
 });
 
+$('#is-current').on('click', function(){
+    location.reload();
+});
+
 $(window).on('resize', function(){
     if (($('nav').is(':visible') === false) && ($('body').outerWidth() >= 768)){
         $('nav').removeAttr('style');
