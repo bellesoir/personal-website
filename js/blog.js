@@ -11,6 +11,9 @@ $('#menu li'). on('click', function(){
 });
 
 $('#to-menu').on('click', function(){
+    if ( $.inArray($(isCurrentEntry)[0],$('.entry'))===2){
+        resetVideo();
+    }
     $('.entry').fadeOut(600);
     $('#blog-controls').fadeOut(600, function(){
         hideFooter();
@@ -21,6 +24,9 @@ $('#to-menu').on('click', function(){
 
 $('#forward').on('click', function(){
     var i = $.inArray($(isCurrentEntry)[0],$('.entry'));
+    if (i===2){
+        resetVideo();
+    }
     $($('.entry')[i]).fadeOut(600, function(){
         hideFooter();
         if (i === ($('.entry').length -1)) {
@@ -35,6 +41,9 @@ $('#forward').on('click', function(){
 
 $('#back').on('click', function(){
     var i = $.inArray($(isCurrentEntry)[0],$('.entry'));
+    if (i===2){
+        resetVideo();
+    }
     $($('.entry')[i]).fadeOut(600, function(){
         hideFooter();
         if (i === 0) {
@@ -46,3 +55,7 @@ $('#back').on('click', function(){
         }
     });
 });
+
+var resetVideo = function(){
+    $('iframe').attr('src', 'https://www.youtube.com/embed/SyIl_iVTxy4');
+};
