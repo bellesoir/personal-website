@@ -21,12 +21,17 @@ $(window).on('resize', function(){
 });
 
 var checkFooter = function(){
+    hideFooter();
     if ($('body').outerHeight() <= $(window).height()){
         $('footer').css({'position': 'absolute', 'bottom':'2%'});
     } else {
         $('footer').css({'position': 'relative'});
     }
     $('footer').css({'opacity': '1'});
+};
+
+var hideFooter = function(){
+    $('footer').css({'opacity': '0'});
 };
 
 checkFooter();

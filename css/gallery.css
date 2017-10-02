@@ -2,7 +2,6 @@ body {
     background-image: none;
     background-color: #07375B;
     overflow: auto;
-    height: auto;
 }
 
 #burger, #close-nav {
@@ -21,12 +20,13 @@ body {
 
 .col > div {
     position: relative;
+    background-color: black;
 }
 
 
 img {
     width:100%;
-    border: 5px solid #248FB5;
+    border: 5px solid black;
     display: inline-block;
     vertical-align: middle;
 }
@@ -45,6 +45,7 @@ img {
 .caption p {
     width: 80%;
     text-align: center;
+    line-height: 1.5;
     margin: 0 auto;
     overflow: hidden;
     padding-top: 12%;

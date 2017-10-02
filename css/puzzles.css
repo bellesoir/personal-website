@@ -1,13 +1,12 @@
-body {
-    width: 100vw;
-    height: 100vh;
+nav li {
+    margin-bottom: 10px;
 }
 
 h1, h2 {
     font-family: 'IM Fell English SC', cursive, arial;
 }
 h1 {
-    font-size: 2.4em
+    font-size: 2.4em;
 }
 
 h2 {
@@ -15,8 +14,8 @@ h2 {
 }
 
 #madlib-input {
-    width: 340px;
-    margin: 0 auto;
+    width: 250px;
+    margin: 10px auto;
 }
 
 form {
@@ -24,8 +23,9 @@ form {
 }
 
 input {
-    font-family: 'IM Fell English SC', cursive, arial;
-    font-weight: bolder;
+    font-family: 'Century Gothic', arial, sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 5px;
 }
 
 input:focus {
@@ -49,6 +49,8 @@ input.is-invalid:focus {
 button {
     border-radius: 12px;
     width: 60px;
+    display: block;
+    margin: auto;
 }
 
 #madlib-story {
@@ -56,7 +58,8 @@ button {
     border-radius: 50px;
     text-align: center;
     display: none;
-    font: normal 2em 'IM Fell English SC', cursive, arial;
+    font: normal 1.5em 'IM Fell English SC', cursive, arial;
+    padding: 20px 10px 5px;
 }
 
 h3, p {
@@ -68,5 +71,19 @@ h3 {
 }
 
 span {
-    color: #248FB5;
+    color: #31fffb;
+}
+
+@media all and (min-width: 768px) {
+    #madlib-input {
+        width: 500px;
+        margin: 10px auto;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    #madlib-input {
+        width: 660px;
+        margin: 10px auto;
+    }
 }

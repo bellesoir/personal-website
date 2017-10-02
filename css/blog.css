@@ -1,27 +1,36 @@
-body {
+#background {
     background-position: 72%;
 }
 
-body > div:first-of-type {
+#blog-background {
     width: 90%;
     margin: 5%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50px;
-    height: 80%;
+}
+
+#menu {
+    display: block;
+    font: normal 16px "Rock Salt", cursive, arial;
+}
+
+#menu li {
+    color: #DBCDC2;
+    font-weight: normal;
+    text-align: center;
 }
 
 .entry {
+    display: none;
     width: 100%;
-    height: 100%;
-    padding: 5%;
+    padding: 30px 5% 5%;
 }
 
-.entry img {
+.entry img, iframe {
     display: block;
-    max-width: 100%;
-    height: 50%;
+    max-width: 90%;
     margin: auto;
-    border: 5px solid #DBCDC2;
+    border: 3px solid #DBCDC2;
 }
 
 h2, p, a {
@@ -31,25 +40,28 @@ h2, p, a {
 p {
     font-size: 12px;
     height: 40%;
-    overflow-y: auto;
+    text-align: justify;
 }
 
-body > div:last-of-type {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+#blog-controls {
     text-align: center;
-
+    display: none;
 }
 
-body > div:last-of-type p {
-    text-align: center;
+#blog-controls li {
+    display: inline-block;
+    padding: 0 12%;
+    color: #DBCDC2;
 }
 
-#blog-nav a {
-    text-decoration: none;
+@media all and (min-width: 768px){
+    .entry img, iframe {
+        max-width: 70%;
+    }
 }
 
-#blog-nav a:hover {
-    color: #248FB5;
+@media all and (min-width: 768px){
+    .entry img, iframe {
+        max-width: 50%;
+    }
 }
