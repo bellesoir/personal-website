@@ -4,8 +4,8 @@
 
 #blog-background {
     width: 90%;
-    margin: 5%;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 5% 5%;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 50px;
 }
 
@@ -41,6 +41,7 @@ p {
     font-size: 12px;
     height: 40%;
     text-align: justify;
+    letter-spacing: .12em;
 }
 
 #blog-controls {

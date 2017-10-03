@@ -35,3 +35,12 @@ var hideFooter = function(){
 };
 
 checkFooter();
+
+
+//transition from is-locked homepage to is-unlocked
+$('form').on('submit', function(e){
+    e.preventDefault();
+    if ($('#is-locked input').val() == '7208'){
+        $('#is-locked').fadeOut(2000);
+    }
+});
