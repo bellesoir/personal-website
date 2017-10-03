@@ -42,5 +42,15 @@ $('form').on('submit', function(e){
     e.preventDefault();
     if ($('#is-locked input').val() == '7208'){
         $('#is-locked').fadeOut(2000);
+        Cookies.set('wall-shown', true);
     }
 });
+
+function checkCookie(){
+    var wallShown = Cookies.get('wall-shown');
+    if (wallShown == true){
+        $('#is-locked').css('display', 'none');
+    }
+};
+
+checkCookie();
