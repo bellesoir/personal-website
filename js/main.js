@@ -49,7 +49,7 @@ $('form').on('submit', function(e){
 
 function checkCookie(){
     var wallShown = Cookies.get('wall-shown');
-    if (wallShown == true){
+    if (wallShown == 'true'){
         $('#is-locked').css('display', 'none');
     }
 };
