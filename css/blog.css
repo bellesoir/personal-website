@@ -55,6 +55,10 @@ p {
     color: #DBCDC2;
 }
 
+footer p {
+    letter-spacing: normal;
+}
+
 @media all and (min-width: 768px){
     .entry img, iframe {
         max-width: 70%;
